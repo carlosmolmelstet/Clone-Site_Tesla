@@ -12,6 +12,25 @@ body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
 }
 
 html {
@@ -22,6 +41,7 @@ html {
 
 nav {
     position: fixed;
+    z-index: 999;
 }
 
 .nav {
@@ -33,7 +53,7 @@ nav {
     
     font-family: Gotham;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 13px;
 
 }
 
@@ -72,11 +92,6 @@ nav {
     color: black;
 }
 
-.btn-gp {
-    display: flex;
-    justify-content: center;
-    padding-top: 52vh;
-}
 
 .btn-gp button {
     height: 40px;
@@ -87,6 +102,10 @@ nav {
     border: none;
 
     font-family: Gotham;
+}
+
+.btn-gp button:hover {
+    cursor: pointer;
 }
 
 .btn-gp button:first-child {
@@ -101,26 +120,13 @@ nav {
     color: #333;
 }
 
-.arrow {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.arrow img{
-    width: 40px;
-}
-
-.arrow img:hover{
-    cursor: pointer;
-}
-
-
 /* SECTION 1 */
 
 .section-1 {
     background-image: url("images/banner1.jpg");
-    height: 102vh;
+    background-position: center;
+    height: 100vh;
+    position: relative;
 }
 
 .section-1 h2 {
@@ -144,11 +150,39 @@ nav {
 
 }
 
+.section-1 .btn-gp {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    bottom: 70px;
+}
+
+.section-1 .arrow {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    bottom: 20px;
+
+}
+
+.section-1 .arrow img{
+    width: 40px;
+}
+
+.section-1 .arrow img:hover{
+    cursor: pointer;
+}
+
 /* SECTION 2 */
 
 .section-2 {
     background-image: url("images/banner2.jpg");
-    height: 110vh;
+    background-position: center;
+    height: 100vh;
+    position: relative;
 }
 
 .section-2 h2 {
@@ -175,14 +209,19 @@ nav {
 .section-2 .btn-gp {
     display: flex;
     justify-content: center;
-    padding-top: 60vh;
+    position: absolute;
+    width: 100vw;
+    bottom: 30px;
+   
 }
 
 /* SECTION 3 */
 
 .section-3 {
     background-image: url("images/banner3.png");
-    height: 110vh;
+    background-position: center;
+    height: 100vh;
+    position: relative;
 }
 
 .section-3 h2 {
@@ -209,15 +248,18 @@ nav {
 .section-3 .btn-gp {
     display: flex;
     justify-content: center;
-    padding-top: 60vh;
+    position: absolute;
+    width: 100vw;
+    bottom: 30px;
+
 }
-
-
 /* SECTION 4 */
 
 .section-4 {
     background-image: url("images/banner4.png");
-    height: 110vh;
+    background-position: center;
+    height: 100vh;
+    position: relative;
 }
 
 .section-4 h2 {
@@ -244,14 +286,18 @@ nav {
 .section-4 .btn-gp {
     display: flex;
     justify-content: center;
-    padding-top: 60vh;
+    position: absolute;
+    width: 100vw;
+    bottom: 30px;
 }
 
 /* SECTION 5 */
 
 .section-5 {
     background-image: url("images/banner5.png");
-    height: 110vh;
+    background-position: center;
+    height: 100vh;
+    position: relative;
 }
 
 .section-5 h2 {
@@ -278,14 +324,18 @@ nav {
 .section-5 .btn-gp {
     display: flex;
     justify-content: center;
-    padding-top: 60vh;
+    position: absolute;
+    width: 100vw;
+    bottom: 30px;
 }
 
 /* SECTION 6 */
 
 .section-6 {
     background-image: url("images/banner6.png");
-    height: 110vh;
+    background-position: center;
+    height: 100vh;
+    position: relative;
 }
 
 .section-6 h2 {
@@ -312,13 +362,15 @@ nav {
 .section-6 .btn-gp {
     display: flex;
     justify-content: center;
-    padding-top: 60vh;
+    position: absolute;
+    width: 100vw;
+    bottom: 30px;
 }
 
 /* SECTION 7 */
 
 .section-7{
-    height: 110vh;
+    height: 100vh;
 }
 
 .section-7 h2 {
@@ -339,7 +391,7 @@ nav {
 }
 
 .section-7 .accessories-img img {
-    height: 700px;
+    height: 70vh;
 }
 
 
